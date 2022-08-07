@@ -9,7 +9,9 @@ st.header("Candidate: Nguyen Trung Bao Anh")
 st.markdown("Python code here is basic and short, see file notebook to more detail. Thank you")
 
 st.header("1. Read file")
-df = pd.read_csv(r"C:\Users\NguyenTrungBaoAnh\Desktop\txn_history_dummysample (1).csv", parse_dates = ["date_of_birth","txn_ts"])
+url = 'https://drive.google.com/file/d/1ExC6u_yYoPbt4VevEzY9Rvijw2x8KGPG/view'
+path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+df = pd.read_csv(path, parse_dates = ["date_of_birth","txn_ts"])
 st.code("import pandas as pd\n\
 df = pd.read_csv(txn_history_dummysample.csv)")
 st.text("Show dataframe")
