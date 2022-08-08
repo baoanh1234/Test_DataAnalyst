@@ -93,7 +93,7 @@ st.pyplot(fig)
 st.subheader("Conclusion")
 st.text(" - Transactions of people between 20 and 30 ages are more significant than people older than 30 ages")
 
-st.header("5. Average of each transaction by age")
+st.header("5. Average amount of each transaction by age")
 st.text("Group by year and then sum amount by year")
 st.code("df_year_sum = df.groupby(by=['year'], as_index = False).sum()")
 df_year_sum = df.groupby(by=["year"], as_index = False).sum()
